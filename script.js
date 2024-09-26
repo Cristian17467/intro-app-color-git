@@ -8,12 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const colorDisplay = document.getElementById('colorDisplay');
     const hexCode = document.getElementById('hexCode');
     const colorPicker = document.getElementById('colorPicker');
-
+    
     function componentToHex(c) {
         let hex = c.toString(16);
         return hex.length == 1 ? "0" + hex : hex;
     }
-
     function rgbToHex(r, g, b) {
         return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
     }
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const color = `rgb(${red}, ${green}, ${blue})`;
         const hex = rgbToHex(red, green, blue);
-
+// comentario de grafucacion 
         colorDisplay.style.backgroundColor = color;
         hexCode.textContent = hex;
 
